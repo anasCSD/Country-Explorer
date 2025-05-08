@@ -143,4 +143,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
 
+            if (isDefault) {
+                container.appendChild(countryCard);
+            } else {
+                // For search results, insert after the default message
+                resultsContainer.insertBefore(countryCard, resultsContainer.children[1]);
+            }
+        });
+    }
+});
             
