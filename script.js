@@ -72,3 +72,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error:', error);
             });
     }
+
+    function displayCountryData(countries, isDefault) {
+        const container = isDefault ? defaultCountriesContainer : resultsContainer;
+        
+        countries.forEach(country => {
+            const countryCard = document.createElement('div');
+            countryCard.className = 'country-card';
+            
+           
+            let currencies = 'N/A';
+            if (country.currencies) {
+                currencies = Object.values(country.currencies)
+                    .map(currency => `${currency.name} (${currency.symbol || 'No symbol'})`)
+                    .join(', ');
+            }
+            
+           
+            let languages = 'N/A';
+            if (country.languages) {
+                languages = Object.values(country.languages).join(', ');
+            }
+            
+            
