@@ -9,3 +9,31 @@
     margin-bottom: 1.5rem;
     color: #ecf0f1;
 }
+.header-description {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.header-description p {
+    margin: 0;
+}
+
+.default-message {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 8px;
+}
+
+.default-message h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
