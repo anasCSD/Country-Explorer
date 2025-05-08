@@ -37,3 +37,20 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+.credits {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Add to existing media query */
+@media (max-width: 600px) {
+    .header-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+}
